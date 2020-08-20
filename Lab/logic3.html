@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ระบบ Log In</title>
+</head>
+<body>
+
+5. ให้เขียนระบบ login</br>
+ให้ใช้ prompt ในการถามใครเป็นคน login</br>
+ถ้าผู้ใช้กรอกว่า “Admin” ให้ใช้ prompt ถาม password</br>
+วิธีเช็ค Password</br>
+ถ้า string นั้นเป็น “codecamp#6” ให้ alert “ยินดีต้อนรับ”</br>
+ถ้า string เป็นอย่างอื่นให้ alert เป็น “Wrong password”</br>
+ถ้าเป็น string ว่าง หรือ กด cancel ให้ alert ว่า “ยกเลิก”</br>
+ถ้าผู้ใช้กรอกอย่างอื่นที่ไม่ใช่ “Admin” ให้ alert ว่า “ผมไม่รู้จักคุณ”</br>
+ถ้าผู้ใช้กรอก input เป็น string ว่าง หรือกด Esc ให้ alert ว่า “ยกเลิก”
+</body>
+
+<script>
+    let user = prompt('ใครเป็นผู้ login')
+    if(user === 'Admin'){
+        let password = prompt("Password");
+        if (password === 'codecamp#6'){
+            alert('ยินดีต้อนรับ')
+        } else if (password === ''){
+            alert('ยกเลิก')
+        } else {
+            alert('Wrong password')
+        }
+    } else if(user === ''){
+        alert('ยกเลิก')
+    } else {
+        alert('ฉันไม่รู้จักคุณ')
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2>2. เขียนคำสั่ง if ที่เช็คอายุว่าอยู่ระหว่าง 18 - 60</br>
+    3. เขียนคำสั่ง if ที่เช็คอายุว่าไม่อยู่ระหว่าง 18 - 60</br>
+    4. คำสั่งไหนจะถูกรันบ้าง</h2>
+
+if (-1 || 0) alert( 'first' ); // ถูกรัน
+if (-1 && 0) alert( 'second' ); // ไม่ถูกรัน
+if (null || -1 && 0) alert( 'third' ); // ไม่ถูกรัน
+
+</body>
+
+<script>
+    let age = Number(prompt('คุณอายุเท่าไหร่'))
+
+    if( age >= 18 && age <= 60 ){
+        alert('คุณอยู่ในเกณฑ์')
+    } else {
+        alert('คุณไม่อยู่ในเกณฑ์ที่กำหนด')
+    }
+</script>
+</html>
