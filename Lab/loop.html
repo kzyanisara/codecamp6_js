@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<br lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop</title>
+</head>
+<br>
+<strong>1. เลขที่ถูก alert เป็นลำดับสุดท้ายคือเลขอะไร</strong></br>
+let i = 3;</br>
+while (i) {</br>
+alert( i-- );</br>
+}</br>
+
+Ans 1</br>
+
+<strong>2.code ทั้งสองอันนี้จะแสดง alert ออกมาเหมือนกันทั้งหมดหรือไม่</strong></br>
+
+let i = 0;</br>
+while (++i < 5) alert( i );</br>
+
+let i = 0;</br>
+while (i++ < 5) alert( i );</br>
+
+Ans เหมือนกัน</br>
+
+<strong>3.code ทั้งสองอันนี้จะแสดง alert ออกมาเหมือนกันทั้งหมดหรือไม่ </strong></br>
+
+for (let i = 0; i < 5; i++) alert( i );</br>
+for (let i = 0; i < 5; ++i) alert( i );</br>
+
+Ans เหมือนกัน</br>
+
+<strong>4. ให้เขียน loop ทั้งแสดงเลข 2 ถึง 10 ออกมา</br></strong>
+<strong>Ans</strong><br>
+for (let i = 2; i < 11; i++) alert( i );</br>
+for (let i = 2; i < 11; i = i+2) alert(i);</br>
+
+<strong>5. เปลี่ยน code for loop ด้านล่างนี้ให้เป็น while loop โดยที่ผลลัพธ์ยังเหมือนเดิม</br></strong>
+for (let i = 0; i < 3; i++) {</br>
+alert( `number ${i}!` );</br>
+}
+<strong>Ans</strong><br>
+let i = 0;<br>
+while (i<3) {<br>
+alert( `number ${i}!` );<br>
+i = i + 1;
+}<br>
+
+</body>
+</html>
