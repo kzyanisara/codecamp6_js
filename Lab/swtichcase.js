@@ -17,7 +17,7 @@ switch (browser) {
         alert( 'We hope that this page looks ok!' );
 }
 
-Ans
+//Ans
 
 let browser = prompt('what is your browser')
 
@@ -41,6 +41,7 @@ if (browser === 'Edge'){
 
 console.log('bye')
 
+
 // แปลง Code ดังกล่าวเป็น
 // switchcase statement
 
@@ -57,7 +58,7 @@ if (a == 2 || a == 3) {
     alert( '2,3' );
 }
 
-Ans
+//Ans
 let a = +prompt("a?", "");
 
 switch (a) {

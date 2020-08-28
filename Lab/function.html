@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Homework</title>
+</head>
+<body>
+
+
+</body>
+
+<script>
+    //1
+    function draw(n) {
+        let string = ''
+        for (let i = 0; i < n; i++) {
+            string = string + '*'
+        }
+        console.log(string)
+    }
+
+    draw(5)
+
+    //2
+    function draw(n) {
+        let string = ''
+        for (let i = 0; i < n; i++) {
+            for(let j = 0; j < n; j++) {
+                string += '*';
+            }
+            string = string + '\n';
+        }
+        console.log(string)
+    }
+
+    draw(5)
+
+    //3
+    function draw(n) {
+        let string = ''
+        for (let i = 0; i < n; i++) {
+            for(let j = 0; j < n; j++) {
+                string = string + '*';
+            }
+            string = string + '\n';
+        }
+        console.log(string)
+    }
+
+    draw(4)
+
+    //4
+    function draw(n) {
+        let number = ''
+        for (let i = 1; i <= n; i++) {
+            for(let j = 1; j <= n; j++) {
+                number = number + j;
+            }
+            number = number + '\n';
+        }
+        console.log(number)
+    }
+
+    draw(4)
+
+    //5
+    function draw(n) {
+        let number = ''
+        for (let i = 1; i > 0; i--) {
+            for(let j = 1; j <= n; j++) {
+                number = number + j;
+            }
+            number = number + '\n';
+        }
+        console.log(number)
+    }
+
+    draw(4)
+
+    //6
+    function draw(n) {
+        let number = ''
+        let round = 1
+        for(let i = 1; i <= n; i++){
+            for (let j = 1; j <= n; j++) {
+                number = number + round
+                round = round + 1
+            }
+            number = number +  '\n'
+        }
+        console.log(number);
+    }
+
+    draw(4)
+
+    //7
+    function draw(n) {
+        let number = ''
+        let round = n*n
+        for(i = n; i > 0; i--){
+            for(j = 0; j < n; j++) {
+                number += round
+                round--
+            }
+            number += '\n'
+        }
+        console.log(number);
+    }
+
+    draw(4)
+
+    //8
+    function draw(n) {
+        let number = ''
+        for (let i = 0; i < n; i++) {
+            number += i*2
+            number += '\n'
+        }
+        console.log(number);
+    }
+
+    draw(4)
+
+    //9
+
+
+
+</script>
+</html>
