@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+แปลง function ข้างล่างให้อยู่ในรูป arrow function
+
+
+<script>
+   //6.2
+   function ask(question, yes, no) {
+       if (confirm(question)) yes()
+       else no();
+   }
+
+   ask(
+       "Do you agree?",
+       function() { alert("You agreed."); },
+       function() { alert("You canceled the execution."); }
+   );
+
+   //Ans
+
+    let ask = (question, yes, no) => {
+        if (confirm(question)) yes()
+        else no();
+    }
+
+   ask("Do you agree?", () => alert("You agreed."), () => alert("You canceled the execution."))
+
+</script>
+</body>
+</html>
